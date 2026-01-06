@@ -1,0 +1,170 @@
+@media (max-width: 460px) {
+
+  /* navbar-section */
+  .navbar-container input[type="checkbox"]:checked~.logo {
+    display: none;
+
+  }
+
+  .logo {
+    order: 1;
+    font-size: 2.3rem;
+    color: #21b3a7;
+  }
+
+  .home-slider {
+    height: 620px;
+  }
+
+  /* parallax */
+  .parallax h1 {
+    font-size: 28px;
+  }
+
+  /* home-slider */
+  .home-slider {
+    padding: 60px 23px;
+  }
+
+  .home-slider h1 {
+    font-size: 26px;
+  }
+
+  .home-slider p {
+    font-size: 14px;
+  }
+
+  .home-buttons .btn {
+    background-color: #21b3a7;
+    color: white;
+    padding: 5px 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+
+  }
+
+  /* About us */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-top: 20px;
+    margin: auto;
+  }
+
+  .about-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* course */
+  .courses-section {
+    padding: 60px 15px;
+  }
+
+  /* pricing */
+  .section {
+    padding: 60px 15px;
+  }
+
+  /* newsletter */
+  .newsletter-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .newsletter .right input[type="email"] {
+    width: 100%;
+    font-size: 12px;
+    outline: none;
+    min-width: 0px;
+  }
+
+  .newsletter .left p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .newsletter .left h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  /* college-requirements */
+  .college-requirements .container {
+    margin: auto;
+    padding: 20px;
+  }
+
+  .college-requirements {
+    padding: 0px 10px;
+  }
+
+  .text-column h2 {
+    font-size: 24px;
+  }
+
+  /* transfer-section */
+  .transfer-text h2 {
+    font-size: 24px;
+  }
+
+  .transfer-text {
+    align-items: flex-start;
+  }
+
+  .transfer-text p,
+  .transfer-text li {
+    font-size: 14px;
+  }
+}
+
+
+/* footer */
+@media (max-width: 460px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .site-footer {
+    padding: 0px 42px 20px;
+  }
+
+  .footer-col h2,
+  .footer-col h3 {
+    font-size: 16px;
+  }
+
+  .footer-col p,
+  .footer-col li,
+  .footer-col span {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .recent-posts .post span {
+    font-size: 12px;
+  }
+
+  .footer-col {
+    max-width: 100%;
+    margin-bottom: -26px;
+  }
+}

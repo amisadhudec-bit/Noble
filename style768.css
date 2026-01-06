@@ -1,0 +1,248 @@
+@media (max-width: 768px) {
+
+  /* navbar */
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+
+  /* About us */
+  .card {
+    width: 80%;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .counter {
+    font-size: 30px;
+  }
+
+  /* course */
+  .courses-section h2 {
+    font-size: 2rem;
+  }
+
+  /* pricing */
+  .section h2 {
+    font-size: 2.2rem;
+  }
+
+  /* newsletter */
+  .newsletter-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 22px;
+  }
+
+  .newsletter-text p {
+    font-size: 14px;
+  }
+
+  .newsletter-form {
+    border-bottom: 1px solid white;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .newsletter-form input {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /* parallax-section  */
+  .parallax-section {
+    background-attachment: scroll;
+    /* Disable parallax for mobile */
+  }
+
+  .parallax-content h1 {
+    font-size: 32px;
+  }
+
+  .parallax-content p {
+    font-size: 16px;
+  }
+
+  /* about  section*/
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .teacher-card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  /* college-requirements */
+  .college-requirements .row {
+    flex-direction: column;
+  }
+
+  .text-column h2 {
+    text-align: center;
+  }
+
+  .text-column,
+  .image-column {
+    flex: 1 1 100%;
+  }
+
+  /* transfer-section */
+  .transfer-section {
+    text-align: center;
+  }
+
+  .transfer-image img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .transfer-text .checklist {
+    text-align: left;
+    display: inline-block;
+  }
+
+  /* contact us */
+  .parallax h1 {
+    font-size: 36px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .recent-posts .post {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .recent-posts .post img {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noble University</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1200.css">
+  <link rel="stylesheet" href="style768.css">
+  <link rel="stylesheet" href="style460.css">
+
+  <!-- Font Awesome only ONE time -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta name="description" content="Noble University offers world-class education, online courses and professional programs.">
+
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <input type="checkbox" id="menu-toggle">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <h1 class="logo">Noble</h1>
+      <ul class="menu-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+
+        <li><a href="#"><i class="fas fa-search"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div class="home-slider">
+    <h1 data-aos="fade-up" data-aos-duration="2000">Welcome to Noble University</h1>
+    <p data-aos="fade-up" data-aos-duration="2000">Your journey to excellence begins here. Join us to explore endless
+      possibilities.</p>
+    <div class="home-buttons">
+      <a href="about.html" class="btn" data-aos="fade-right" data-aos-duration="2000">Learn More About Us</a>
+      <a href="admissions.html" class="btn" data-aos="fade-left" data-aos-duration="2000">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- About us -->
+  <section class="about-section">
+    <div class="about-text" data-aos="fade-up" data-aos-duration="1500">
+      <h2>About Us</h2>
+      <p>
+        XYZ University is committed to excellence in teaching, learning, and research. Established in 1990, our
+        institution has grown into a prestigious center of higher education that empowers students to shape the future.
+      </p>
+      <p>
+        We strive to provide holistic education, nurturing the intellectual and personal growth of every student. Our
+        campus promotes a culture of innovation, diversity, and global citizenship.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80"
+        alt="University Building" />
+    </div>
+  </section>
+
+  <!-- info-cards -->
+  <section class="info-cards" data-aos="fade-up" data-aos-duration="2000">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To educate leaders who make a difference globally through academic excellence and societal contribution.</p>
+    </div>
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To be a globally recognized university providing transformative education and cutting-edge research.</p>
+    </div>
+    <div class="card">
+      <h3>Core Values</h3>
+      <p>Integrity, Innovation, Inclusiveness, and Impact.</p>
+    </div>
+  </section>
+
+
+  <!-- pricing -->
+  <section class="section" data-aos="fade-up" data-aos-duration="2000">
+    <h2>Our Pricing</h2>
+    <p>Pricing And Packages</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JS, React</p>
+        <div class="price">₹65,000</div>
+        <ul>
+          <li>30+ Video Lectures</li>
+          <li>1-on-1 Mentorship</li>
+          <li>Live Projects</li>
+          <li>Completion Certificate</li>
+        </ul>
+        <a href="#" class="btn">GET STARTED</a>
+      </div>
+
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>SEO, Ads, Social Media</p>
+        <div class="price">₹70,000</div>
+        <ul>
+          <li>25+ Hours Content</li>
+          <li>Expert Sessions</li>
+          <li>Case Studies</li>
+          <li>Certification</li>
+        </ul>
+        <a href="#" class="btn">GET STARTED</a>
+      </div>
+
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>Photoshop, Illustrator</p>
+        <div class="price">₹33,499</div>
+        <ul>
+          <li>20+ Tools Covered</li>
+          <li>Assignments</li>
+          <li>Mock Projects</li>
+          <li>Job Assistance</li>
+        </ul>
+        <a href="#" class="btn">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- course-section -->
+  <section class="course-section" data-aos="fade-up" data-aos-duration="2000">
+    <h1>Browse Our Online Courses</h1>
+    <div class="course-grid">
+      <!-- Each Card -->
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/design.png" alt="UI/UX">
+        <h3>UI/UX Design Courses</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card active">
+        <img src="https://img.icons8.com/?size=100&id=yr9W6qqX2cWa&format=png&color=000000" alt="Art & Design">
+        <h3>Art & Design</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/artificial-intelligence.png" alt="Computer Science">
+        <h3>Computer Science</h3>
+        <span>10 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/museum.png" alt="History">
+        <h3>History & Archeologic</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/engineer.png" alt="Software">
+        <h3>Software Engineering</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/?size=100&id=v91rwbw24ncq&format=png&color=000000" alt="Information Software">
+        <h3>Information Software</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/heart-health.png" alt="Health">
+        <h3>Health & Fitness</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/?size=100&id=61551&format=png&color=000000" alt="Marketing">
+        <h3>Marketing</h3>
+        <span>15 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/pen.png" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        <span>25 Courses</span>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.icons8.com/ios/100/musical-notes.png" alt="Music">
+        <h3>Music</h3>
+        <span>25 Courses</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- newsletter section -->
+  <section class="newsletter" data-aos="fade-up" data-aos-duration="2000">
+    <div class="newsletter-wrapper">
+      <div class="left">
+        <h2>Newsletter - Stay tune and get the latest update</h2>
+        <p>Far far away, behind the word mountains</p>
+      </div>
+      <form class="right">
+        <input type="email" placeholder="Enter email address" required />
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col about">
+          <h1>Noble</h1>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+        </div>
+
+        <div class="footer-col links">
+          <h3>Explore</h3>
+          <ul>
+            <li>➜ Home</li>
+            <li>➜ About</li>
+            <li>➜ Admissions</li>
+            <li>➜ Courses</li>
+            <li>➜ Contact</li>
+          </ul>
+        </div>
+
+        <div class="footer-col links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>➜ Contact Us</li>
+            <li>➜ Pricing</li>
+            <li>➜ Terms & Conditions</li>
+            <li>➜ Privacy</li>
+            <li>➜ Feedbacks</li>
+          </ul>
+        </div>
+
+        <div class="footer-col recent-posts">
+          <h3>Recent Posts</h3>
+          <div class="post">
+            <img src="images/1.jpg" alt="">
+            <div>
+              <p><i class="fas fa-calendar-alt"></i> Jan. 18, 2021 <i class="fas fa-user"></i> Admin</p>
+              <span>Creativity and Inspiration</span>
+            </div>
+          </div>
+          <div class="post">
+            <img src="images/2.png" alt="">
+            <div>
+              <p><i class="fas fa-calendar-alt"></i> Jan. 18, 2021 <i class="fas fa-user"></i> Admin</p>
+              <span>Creativity and Inspiration</span>
+            </div>
+          </div>
+          <div class="post">
+            <img src="images/3.jpg" alt="">
+            <div>
+              <p><i class="fas fa-calendar-alt"></i> Jan. 18, 2021 <i class="fas fa-user"></i> Admin</p>
+              <span>Creativity and Inspiration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col contact">
+          <h3>Have a Questions?</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Noble Collage,Bhesan road,Junagadh</li>
+            <li><i class="fas fa-phone"></i> +91 2223334440</li>
+            <li><i class="fas fa-paper-plane"></i> info123@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </footer>
+
+</body>
+
+<script>
+  AOS.init();
+</script>
+
+</html>

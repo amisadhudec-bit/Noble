@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noble University</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1200.css">
+  <link rel="stylesheet" href="style768.css">
+  <link rel="stylesheet" href="style460.css">
+
+  <!-- Font Awesome only ONE time -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" id="menu-toggle">
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <h1 class="logo">Noble</h1>
+        <ul class="menu-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Parallax Section -->
+  <section class="parallax-section" data-aos="fade-up" data-aos-duration="2000">
+    <div class="parallax-content">
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <section class="contact-section" data-aos="fade-up" data-aos-duration="2000">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="firstName" placeholder="First Name" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <label>Tel. Number</label>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group" style="flex: 1 1 100%;">
+            <label>Message</label>
+            <textarea id="message" placeholder="Write your message here..." required></textarea>
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').vale;
+      const message = document.getElementById('message').value;
+
+      if (firstName && lastName && email && phone && message) {
+        console.log('Form submitted:', { firstName, lastName, email, phone, message });
+        alert('Message sent successfully!');
+        this.reset();
+      } else {
+        alert('Please fill all fields');
+      }
+    });
+  </script>
+  <!-- footer section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h1>Noble</h1>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+
+      <div class="footer-col links">
+        <h3>Explore</h3>
+        <ul>
+          <li>➜ Home</li>
+          <li>➜ About</li>
+          <li>➜ Admissions</li>
+          <li>➜ Courses</li>
+          <li>➜ Contact</li>
+        </ul>
+      </div>
+
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>➜ Contact Us</li>
+          <li>➜ Pricing</li>
+          <li>➜ Terms & Conditions</li>
+          <li>➜ Privacy</li>
+          <li>➜ Feedbacks</li>
+        </ul>
+      </div>
+
+      <div class="footer-col recent-posts">
+        <h3>Recent Posts</h3>
+        <div class="post">
+          <img src="images/1.jpg" alt="">
+          <div>
+            <p><i class="fas fa-calendar-alt"></i> Jan. 18, 2021 <i class="fas fa-user"></i> Admin</p>
+            <span>Creativity and Inspiration</span>
+          </div>
+        </div>
+        <div class="post">
+          <img src="images/2.png" alt="">
+          <div>
+            <p><i class="fas fa-calendar-alt"></i> Jan. 18, 2021 <i class="fas fa-user"></i> Admin</p>
+            <span>Creativity and Inspiration</span>
+          </div>
+        </div>
+        <div class="post">
+          <img src="images/3.jpg" alt="">
+          <div>
+            <p><i class="fas fa-calendar-alt"></i> Jan. 18, 2021 <i class="fas fa-user"></i> Admin</p>
+            <span>Creativity and Inspiration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col contact">
+        <h3>Have a Questions?</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Noble Collage,Bhesan road,Junagadh</li>
+          <li><i class="fas fa-phone"></i> +91 2223334440</li>
+          <li><i class="fas fa-paper-plane"></i> info123@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+</body>
+
+<script>
+  AOS.init();
+</script>
+
+
+</html>
